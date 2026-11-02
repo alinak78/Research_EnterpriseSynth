@@ -5,7 +5,7 @@ Checked against https://saiconference.com/IntelliSys/CallforPapers and https://s
 ## Completed technical preparation
 
 - Anonymous PDF: no author/affiliation block, acknowledgments, funding, project-specific repository URL, known author name, email, or local path in extracted text and metadata. Empty author metadata. No embedded attachments. Third-party literature/dataset creators remain attributed.
-- Official conference-supplied Springer `svproc` class and bibliography style; original template support-file notices retained. Times New Roman body; all checked fonts embedded.
+- Official conference-supplied Springer `svproc` class and bibliography style; original template support-file notices retained. Times New Roman body; all body and nested figure fonts checked and embedded. Original class/support-file bytes match the downloaded template.
 - 11 PDF pages total, main text and GenAI declaration end on page 10; references occupy the end of page 10 and page 11. No appendices. Below 18 main pages and seven additional pages.
 - 214-word abstract, five keywords, numbered and in-text cited tables (1–3), figures (1–2), equation (1), and references. No missing/uncited bibliography entry or unresolved TeX reference.
 - Figures are vector PDFs, visually inspected after rendering. Axis labels and legends fit; captions are brief. Tables fit the margins; zero overfull TeX boxes.
@@ -20,3 +20,9 @@ Checked against https://saiconference.com/IntelliSys/CallforPapers and https://s
 - Check the complete manuscript, references, and results for scientific accuracy; acceptance is not guaranteed. Limited novelty, classical-only baselines, small datasets, a single learner, and overlapping training folds are explicitly disclosed.
 - The public repository identifies its owner. Submit only the anonymous PDF unless the conference specifically requests supporting artifacts; review any artifact links for double-blind leakage.
 - Enter final human author information in the portal; those fields are separate from the anonymous PDF. The portal requires original-work and co-author confirmations. No agreement was accepted on the user's behalf.
+
+## Review-polish update
+
+Section 7 now explicitly defines the four approval dimensions and supplies a response when validity passes but a predeclared utility criterion fails. The conclusion repeats this operational recommendation. The quota discussion separates an empirical counterexample from an untested causal mechanism. These are manuscript edits; the frozen experiment code, data, measurements, and reported numerical results are unchanged.
+
+Rebuilt PDF remains 11 pages, with a 214-word abstract and references starting on page 10. Rechecked empty author metadata, absence of XMP/embedded attachments/emails/known identifying links, embedded figure and body fonts, template files, cited references, and table rows. The evidence validator still reproduces the 210 recorded predictive evaluations. Human scientific review and GenAI-policy assessment remain open rather than being checked off by an automated formatting audit.
