@@ -1,0 +1,27 @@
+{
+  "pages": 11,
+  "abstract_words": 214,
+  "bytes": 194534,
+  "metadata": {
+    "/Title": "Validity Is Not Utility: A Paired Audit of Constraint Repair and Class Coverage in Synthetic Tabular Data",
+    "/Author": "",
+    "/Subject": "Anonymous IntelliSys 2027 research draft"
+  },
+  "embedded_fonts": [
+    "/GSXJFF+txsys",
+    "/GTVRJV+LMRoman9-Regular",
+    "/IHDCWL+txmiaX",
+    "/JGUKHG+TimesNewRomanPSMT",
+    "/JHLEDX+LMMono10-Regular-Identity-H",
+    "/JRYMRO+TimesNewRomanPS-BoldMT",
+    "/NGTUOI+TimesNewRomanPS-ItalicMT",
+    "/REENYM+NewTXMI",
+    "/RQXYOW+LMRoman10-Regular",
+    "/SHLWCH+LMMono9-Regular-Identity-H",
+    "/VEQQKW+NewTXMI7",
+    "/YBQRHU+LMRoman7-Regular"
+  ],
+  "known_identity_checks": "pass",
+  "latex_overfull_and_unresolved": "none",
+  "status": "human scientific review and GenAI-policy assessment outstanding"
+}

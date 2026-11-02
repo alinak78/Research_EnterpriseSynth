@@ -1,0 +1,4 @@
+dataset,source_rows,analysis_rows,positives,real_violations
+adult,32561,6000,1499,0
+bank,4521,4521,521,0
+wine,1599,1599,217,0

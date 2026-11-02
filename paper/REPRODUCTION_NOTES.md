@@ -1,0 +1,11 @@
+# Evaluation record and deviations
+
+The protocol was written before the first run. `results/frozen_inputs.json` hashes experimental source, runner, protocol, and downloaded archives before fitting. All hashes validate against the current files. The initial attempt to start the runner had a path error and executed no models. One full successful run supplied all 210 fits; no parameter changes or selective reruns followed inspection.
+
+Recording deviation: although the protocol described fingerprinting splits and environment before running, the implementation recorded deterministic split identities and environment at completion, not in the initial input manifest. This difference is disclosed in Section 5.2. Do not call this external preregistration or retrospective code hashes proof of a third-party timestamp. No incomplete release occurred. Pool exhaustion is covered by a small contract test; the runner fails rather than filling with invalid rows.
+
+`results/selection_bias.csv` retains pool hashes and full-pool class-conditional acceptance rates. Pools are regenerated from frozen source, data, and seeds; final released rows are stored directly. The generator seed is `2027 + 100*dataset_index + fold + 10000*(generator_index+1)`, dataset order Adult/Bank/Wine, generator order marginal/joint/conditional. Bootstrap uses the unoffset dataset/fold seed. Real and bootstrap reference metric rows also carry this base seed. The `seed` column is the base seed, not the offset pool seed.
+
+`results/paired_effects.csv` was computed after the run using seed 2027 and 2,000 bootstrap resamples of five paired fold differences. These stability intervals are conditional descriptions because training folds overlap. Their generation does not alter the evaluation protocol. Main text focuses on mean effects and fold ranges and does not select a winning method via test-set tuning.
+
+The reporting script derives the two figure PDFs and both table fragments from the stored CSV. Table rows are embedded in `main.tex`; validation checks they agree. `fit_seconds` includes fitting and metric prediction, not generator construction. Candidate examinations are prefix lengths in shared batches, not separately executed generator calls or wall-clock estimates.

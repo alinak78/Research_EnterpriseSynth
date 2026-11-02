@@ -1,0 +1,11 @@
+# Public data attribution and transformations
+
+All three UCI dataset pages designate Creative Commons Attribution 4.0 International (https://creativecommons.org/licenses/by/4.0/), checked 2026-11-01. Raw archives are preserved; generated releases are adaptations and are not original observations. Credit the original creators when redistributing these data. No raw data license is replaced by a code license.
+
+- Becker, B. and Kohavi, R. (1996), Adult, UCI: https://doi.org/10.24432/C5XW20. Download: https://archive.ics.uci.edu/static/public/2/adult.zip. Uses `adult.data`, drops incomplete rows, then first 6,000 complete rows, income target >50K; no `adult.test` use. Source has 32,561 rows; complete-case prefix is not a random representative subsample.
+- Moro, S., Rita, P., Cortez, P. (2014), Bank Marketing, UCI: https://doi.org/10.24432/C5K306. Download: https://archive.ics.uci.edu/static/public/222/bank+marketing.zip. Inner `bank.zip/bank.csv`, 4,521 rows, subscription target. `pdays=-1` denotes no prior contact. Call duration remains a feature, so this is retrospective classification rather than prospective targeting.
+- Cortez, P., Cerdeira, A., Almeida, F., Matos, T., Reis, J. (2009), Wine Quality, UCI: https://doi.org/10.24432/C56S3T. Download: https://archive.ics.uci.edu/static/public/186/wine+quality.zip. Red CSV only, 1,599 rows, quality >=7 target. White-wine data are unused.
+
+Analysis omits no rows based on validity checks. All selected real rows satisfy their selected rule. Row IDs in `results/splits.json` index the transformed analysis tables, not every row in the original UCI archives. Each held-out row appears once per dataset. Random row splits do not prevent identical feature values on both sides; no claim of temporal or entity-isolated validation is made.
+
+Each compressed generated filename identifies dataset, fold, generator, and processing method. Each release has the training fold's row count, excludes all held-out rows from fitting, and contains a binary `target`. `bootstrap` files intentionally replicate real training rows. Zero exact matches from copula/marginal generation is not a privacy guarantee. Raw archives can contain original dataset documentation and creator contact information; they are not manuscript metadata.
